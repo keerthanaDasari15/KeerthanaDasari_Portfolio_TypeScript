@@ -204,8 +204,7 @@ export const certifications: CertificationsType[] = [
     certificate: 'AWS Cloud Certified Practitioner',
     issuedby: 'AWS',
     github: 'https://www.credly.com/badges',
-  }
-
+  },
 ];
 
 // option to hide or show the ContactUs component
