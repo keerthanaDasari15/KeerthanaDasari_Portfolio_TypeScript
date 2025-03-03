@@ -17,7 +17,7 @@ export const greetings: GreetingsType = {
   description:
     "I am an Final Year Student based out of Vijayawada, Andhra Pradesh, with a strong passion for technology and problem-solving. As a self-taught programmer, I am continually exploring new technologies and innovative solutions to build impactful projects. I thrive on tackling challenges and am always eager to expand my knowledge and expertise.",
   resumeLink:
-    'https://github.com/',
+    'https://github.com',
 };
 
 export const openSource = {
@@ -27,7 +27,7 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https:',
+  url: 'https:www.google.com/',
   linkedin: 'https://www.linkedin.com/in/',
   github: 'https://github.com/',
   kaggle: "https://www.kaggle.com/",
@@ -214,10 +214,9 @@ export const showContactUs: boolean = false;
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
   title: 'Dasari Keerthana',
-  description:
-    'A passionate AI/ML Developer',
+  description:'A passionate AI/ML Developer',
   author: 'Dasari Keerthana',
-  url: '',
+  url: 'www.google.com',
   keywords: [
     'Dasari Keerthana',
     'Portfolio',
