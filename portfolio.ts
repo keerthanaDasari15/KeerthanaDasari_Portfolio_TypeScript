@@ -179,6 +179,7 @@ export const experience: ExperienceType[] = [
   {
     role: 'Software Engineer',
     company: 'Skills Marathon',
+    client: 'Skills Marathon',
     companyLogo: '/img/icons/common/ss&c.png',
     date: 'Sep 2024- Feb 2025',
     desc: 'Worked On Designing ML Models',
