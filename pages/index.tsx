@@ -1,15 +1,15 @@
 import dynamic from 'next/dynamic';
-const Navigation = dynamic(() => import('../components/Navigation'));
-const Greetings = dynamic(() => import('../containers/Greetings'));
-const Skills = dynamic(() => import('../containers/Skills'));
-const Proficiency = dynamic(() => import('../containers/Proficiency'));
-const Education = dynamic(() => import('../containers/Education'));
-const Experience = dynamic(() => import('../containers/Experience'));
-const Projects = dynamic(() => import('../containers/Projects'));
-const Certifications = dynamic(() => import('../containers/Certifications'));
-const GithubProfileCard = dynamic(
-  () => import('../components/GithubProfileCard')
-);
+
+// Dynamically import components with SSR disabled
+const Navigation = dynamic(() => import('../components/Navigation'), { ssr: false });
+const Greetings = dynamic(() => import('../containers/Greetings'), { ssr: false });
+const Skills = dynamic(() => import('../containers/Skills'), { ssr: false });
+const Proficiency = dynamic(() => import('../containers/Proficiency'), { ssr: false });
+const Education = dynamic(() => import('../containers/Education'), { ssr: false });
+const Experience = dynamic(() => import('../containers/Experience'), { ssr: false });
+const Projects = dynamic(() => import('../containers/Projects'), { ssr: false });
+const Certifications = dynamic(() => import('../containers/Certifications'), { ssr: false });
+const GithubProfileCard = dynamic(() => import('../components/GithubProfileCard'), { ssr: false });
 import { openSource, showContactUs } from '../portfolio';
 import SEO from '../components/SEO';
 import Contact from '../components/ContactUs';
@@ -36,10 +36,6 @@ export default function Home({
     </div>
   );
 }
-
-// Home.prototype = {
-//   githubProfileData: PropTypes.object.isRequired,
-// };
 
 export async function getStaticProps() {
   const githubProfileData: GithubUserType = await fetch(
